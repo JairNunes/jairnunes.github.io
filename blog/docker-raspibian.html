@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Docker no raspibian</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Clean Blog</a>
+        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -41,7 +41,7 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-
+           
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -51,59 +51,71 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <header class="masthead" style="background-image: url('img/windows-docker.png')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Bootstrap Blog </span>
+            <div class="post-heading">
+              <h1>Docker no Windows 10</h1>
+              <h4 class="subheading"> windows e linux containers no windows 10</h4>
+              <span class="meta">Posted by
+                <a href="#">Jair Nunes</a>
+                on May 24, 2018</span>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-preview">
-            <a href="docker-windows.html">
-              <h2 class="post-title">
-                
-              </h2>
-              <h3 class="post-subtitle">
-              Linux e Windows Containers no Windows 10
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Jair Nunes</a>
-              on April 30, 2018</p>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="docker-raspibian.html">
-              <h2 class="post-title">
-                
-              </h2>
-              <h3 class="post-subtitle">
-              Docker no raspibian 
-              </h3>
-            </a>
-            <p class="post-meta">Posted by
-              <a href="#">Jair Nunes</a>
-              on May 24, 2018</p>
-          </div>
-          <!-- Pager -->
-          <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+    <!-- Post Content -->
+    <article>
+      <div class="container" style="padding-left: 30px;">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            
+            <p>&nbsp;</p>
+<p >  
+    Instalação e utilização do docker no Raspberry PI
+  </p>
+    <h4>Instalando do docker:</h4>
+    <div class="panel panel-default">
+      <pre  class="panel-body" ><code>$ curl -sSL https://get.docker.com | sh
+        </code></pre>
+    </div>
+
+    <h4> Instalando o docker-compose:</h4>
+    <div class="panel panel-default">
+      <pre  class="panel-body" ><code>$  sudo pip install docker-compose
+        </code></pre>
+    </div>
+
+    <h4> Definir o Docker para iniciar automaticamente:</h4>
+    <div class="panel panel-default">
+      <pre  class="panel-body" ><code>$ sudo systemctl enable docker
+        </code></pre>
+    </div>
+
+    você também pode reinicializar o Pi ou iniciar o daemon do Docker com:
+
+    <h4> configurando o docker:</h4>
+    <div class="panel panel-default">
+      <pre  class="panel-body" ><code>$  sudo systemctl start docker
+        </code></pre>
+    </div>
+
+</ul>
+
+
+<p ><strong>Refs:</strong></p>
+<p ><a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/</a></p>
+<p ><a href="https://pypi.org/project/docker-compose/">https://pypi.org/project/docker-compose/</a></p>
+<p >&nbsp;</p>  
+            
           </div>
         </div>
       </div>
-      
-    </div>
+    </article>
 
     <hr>
 
